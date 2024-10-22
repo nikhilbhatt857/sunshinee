@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sunshine</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container header-container">
+        <a href="index.html" class="logo"><img src="vscode/assets/images/Logo.PNG" alt="Logo" class="logo-img" />
+        </a>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="stories.html">Personal Stories</a></li>
+            <li><a href="Write-Story.html">Write a Story</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">
+                More <i class="fas fa-chevron-down"></i>
+              <div class="dropdown-content">
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+              </div>
+          <div class="hamburger">&#9776;</div>
+    </header> 
+
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <h2>Welcome to Sunshine</h2>
+        <p>Your source for wellness and mental health support.</p>
+
+        <div class="feeling-box">
+          <h3>How are you feeling today?</h3>
+          <form class="feeling-form">
+            <label>
+              <input type="radio" name="feeling" value="anxiety" />
+              Anxiety
+            </label>
+            <label>
+              <input type="radio" name="feeling" value="stress" />
+              Stress
+            </label>
+            <label>
+              <input type="radio" name="feeling" value="depression" />
+              Depression
+            </label>
+            <label>
+              <input type="radio" name="feeling" value="moodswings" />
+              Mood Swings
+            </label>
+            <button type="submit" class="btn-feeling">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <section id="blogs" class="blogs-section">
+      <div class="container">
+        <h2 class="blogs-heading">The Sunshine Journal</h2>
+        
+        <div class="blog-slider-container">
+          <button class="arrow-left" onclick="slideLeft()">&#10094;</button>
+          <div class="blogs-wrapper">
+            <div class="blog">
+              <img src="vscode/assets/images/mentalilness.jpg" alt="Mental Health Awareness" class="story-img">
+              <h3>Mental Health Awareness</h3>
+              <p>Understanding the importance of mental health in daily life...</p>
+              <a href="https://www.betterup.com/blog/mental-health-awareness#:~:text=Mental%20health%20awareness%20is%20the,and%20their%20conditions%20go%20untreated." class="blog-link">Read More</a>
+            </div>
+            <div class="blog">
+              <img src="vscode/assets/images/NIH-grant.png" alt="Substance Abuse Recovery" class="story-img">
+              <h3>Substance Abuse Recovery</h3>
+              <p>Ways to recover and rebuild after substance abuse...</p>
+              <a href="link-to-substance-abuse-recovery.html" class="blog-link">Read More</a>
+            </div>
+            <div class="blog">
+              <img src="vscode/assets/images/aarkhodoodle.png" alt="Dealing with Anxiety" class="story-img">
+              <h3>Stress Relief Techniques</h3>
+              <p>Discover effective methods to reduce stress and anxiety...</p>
+              <a href="link-to-anxiety-management.html" class="blog-link">Read More</a>
+            </div>
+            <!-- Add more blog cards as needed -->
+          </div>
+          <button class="arrow-right" onclick="slideRight()">&#10095;</button>
+        </div>
+        
+        <div class="view-all-container">
+          <button class="btn-view-all" onclick="window.location.href='all-blogs.html'">
+            View All Blogs
+          </button>
+
+          <body class="blogs-page">
+            <!-- Page content -->
+          </body>
+          
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <section id="stories" class="stories-section">
+      <div class="container">
+        <h2>Explore Transformative Stories That Ignite Positivity</h2>
+        
+        <div class="story-card">
+          <img src="vscode/assets/images/Story3.jpg" alt="Overcoming Challenges" class="story-img">
+          <div class="story-content">
+          <h3>Story 1: From Darkness to Light</h3>
+          <p>
+            A journey of overcoming addiction and rebuilding life after hitting rock bottom.
+          </p>
+          <a href="https://medium.com/@CallMeJanis/from-darkness-to-light-a-personal-tale-of-resilience-and-transformation-dc8e30c0f6f8" class="story-link">Read More</a>
+        </div>
+        </div>
+        
+        <div class="story-card">
+          <img src="vscode/assets/images/The Power of Community Support in Mental Health Recovery1675863863602.jpg" alt="Overcoming Challenges" class="story-img">
+          <div class="story-content">  
+          <h3> Story 2: The Power of Community Support </h3>
+          <p>
+            How a support group helped a woman regain control over her life after years of substance abuse.
+          </p>
+          <a href="https://recoverycentersofamerica.com/blogs/living-recovery-true-stories-of-addiction-recovery/#:~:text=Jules'%20Story,%2C%20abusive%2C%20and%20neglected%20childhood." class="story-link">Read More</a>
+        </div>
+        </div>
+        <div class="view-stories-container"></div>
+          <button class="btn-view-stories" onclick="window.location.href='#'">
+            View All Stories
+          </button>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <section id="share-story" class="share-story-section">
+      <div class="container">
+        <h2>Share Your Thoughts.</h2>
+        <p class="sub-heading">
+          Your story could inspire and bring hope to others. Share your journey
+          with us!
+        </p>
+        <button
+          onclick="window.location.href='submit-story.html'"
+          class="btn-story"
+        >
+          Write a Story
+        </button>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <section id="resources" class="resources-section  homepage-resources">
+      <div class="container">
+        <h2>Resources</h2>
+        <p class="resources-intro">
+          Discover helpful guides, articles, and tools curated to support your mental health journey. Explore these resources to find inspiration, advice, and support tailored to your needs.
+        </p>
+        <button class="btn-view-resources" onclick="window.location.href='resources.html'">
+          View Resources
+        </button>
+    </section>
+    
+    
+
+    <hr class="section-divider" />
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          We'd love to hear from you! Please fill out the form below and we will
+          get in touch with you shortly.
+        </p>
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Sunshine - All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
